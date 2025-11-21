@@ -21,7 +21,7 @@ app = FastAPI(title="Payment Wallet API")
 origins = [
     "http://localhost:5173",             # Local frontend
     "http://localhost:3000",             # Optional local port
-    "https://payment-wallet-chat-frontend.vercel.app",  # Replace with your real Vercel URL
+    "https://payment-wallet-chat-frontend.vercel.app/login",  # Replace with your real Vercel URL
 ]
 app.add_middleware(
     CORSMiddleware,
