@@ -1,0 +1,38 @@
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.sqlite3
+
+# Environments
+venv/
+.venv/
+env/
+ENV/
+
+# OS files
+.DS_Store
+
+# IDE
+.vscode/
+.idea/
+
+# Logs
+*.log
+
+# Sensitive
+.env
+*.dump
+*.sql
+
+# pytest
+pytest_cache/
+.mypy_cache/
+
+# Bytecode
+*.so
+
+# Build
+build/
+dist/
