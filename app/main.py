@@ -1,41 +1,29 @@
 from fastapi import FastAPI
 from fastapi.openapi.utils import get_openapi
 from fastapi.middleware.cors import CORSMiddleware
+
 from app.api.v1.auth.routes import router as auth_router
 from app.api.v1.wallet.routes import router as wallet_router
 from app.api.v1.profile.routes import router as profile_router
 from app.api.v1.user.routes import router as user_router
-app = FastAPI(title="Payment Wallet API")
-from fastapi import APIRouter, Depends
-from fastapi.security import OAuth2PasswordBearer
-from app.core.jwt import get_current_user
-from app.schemas.wallet import WalletRead
-from sqlalchemy.ext.asyncio import AsyncSession
-from app.db.session import get_db
-from sqlalchemy import select
-from app.models.wallet import Wallet
-# Create the FastAPI app
+from app.api.v1.chat.routes import router as chat_router
+
 app = FastAPI(title="Payment Wallet API")
 
-# CORS configuration
+# Correct CORS configuration
 origins = [
-    "http://localhost:5173",             # Local frontend
-    "http://localhost:3000",             # Optional local port
-    "https://payment-wallet-chat-frontend.vercel.app/login",  # Replace with your real Vercel URL
+    "http://localhost:5173",   # Local dev
+    "http://localhost:3000",   # Optional local React port
+    "https://payment-wallet-chat-frontend.vercel.app",  # Vercel frontend (NO /login)
 ]
+
 app.add_middleware(
     CORSMiddleware,
     allow_origins=origins,
     allow_credentials=True,
-    allow_methods=["*"],  # Enable all HTTP methods
-    allow_headers=["*"],  # Allow all headers
+    allow_methods=["*"],
+    allow_headers=["*"],
 )
-
-# Add this import
-from app.api.v1.chat.routes import router as chat_router
-
-# Add this to your router includes
-
 
 # Include API routers
 app.include_router(auth_router, prefix="/api/v1")
