@@ -27,7 +27,7 @@ It is fully deployed on Vercel, Render, and Neon, showcasing practical experienc
 | API Documentation (Swagger UI) | https://payment-wallet-chat-backend.onrender.com/docs |
 
 ---
-<!-- APPLICATION SCREENSHOTS -->
+## APPLICATION SCREENSHOTS 
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6088afc1-94e9-4026-ada1-a431c01765af" width="48%" />
@@ -50,7 +50,9 @@ It is fully deployed on Vercel, Render, and Neon, showcasing practical experienc
 </p>
 
 <p align="center">
-  <img src="https://github.c
+  <img src="https://github.com/user-attachments/assets/59f43ebb-ed3d-4334-b8b3-ba745e725b9b" width="48%" />
+  <img src="https://github.com/user-attachments/assets/6c027973-1cd4-4688-b214-6adb02fe6eca" width="48%" />
+</p>
 
 # Core Features
 
