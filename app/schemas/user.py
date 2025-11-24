@@ -1,17 +1,17 @@
-# app/schemas/user.py
-from pydantic import BaseModel, EmailStr
+from pydantic import BaseModel, EmailStr, Field
 from typing import Optional
 from uuid import UUID
 
 class UserCreate(BaseModel):
+    full_name: str = Field(..., min_length=2, max_length=50)
     email: EmailStr
-    password: str
-    full_name: Optional[str] = None
+    password: str = Field(..., min_length=6)
+    pin: str = Field(..., min_length=4, max_length=4, regex=r'^\d{4}$')
 
 class UserRead(BaseModel):
     id: UUID
+    full_name: Optional[str]
     email: EmailStr
-    full_name: Optional[str] = None
     is_active: bool
 
-    model_config = {"from_attributes": True}  # pydantic v2: allow reading from ORM objects
+    model_config = {"from_attributes": True}

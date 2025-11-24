@@ -48,8 +48,3 @@ class UserProfileResponse(BaseModel):
 
     model_config = {"from_attributes": True}
 
-class ResetPasswordByPinRequest(BaseModel):
-    email: EmailStr
-    full_name: str
-    pin: str
-    new_password: str

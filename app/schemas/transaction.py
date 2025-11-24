@@ -15,7 +15,7 @@ class TransactionRead(BaseModel):
     wallet_id: UUID
     amount: Decimal
     type: TransactionType
-    status: TransactionStatus = TransactionStatus.SUCCESS
+    status: TransactionStatus = TransactionStatus
 
     provider_tx_id: str | None = None
     counterparty: str | None = None

@@ -18,9 +18,9 @@ router = APIRouter(prefix="/auth", tags=["Auth"])
 # SIGNUP
 # --------------------
 from app.core.security import hash_password, verify_password, hash_pin  # 👈 add hash_pin
-
 @router.post("/signup", response_model=UserRead, status_code=201)
 async def signup(user_data: UserCreate, db: AsyncSession = Depends(get_db)):
+
     result = await db.execute(select(User).where(User.email == user_data.email))
     existing_user = result.scalar_one_or_none()
 
@@ -31,11 +31,13 @@ async def signup(user_data: UserCreate, db: AsyncSession = Depends(get_db)):
         email=user_data.email,
         hashed_password=hash_password(user_data.password),
         full_name=user_data.full_name,
-        pin_hashed=hash_pin(user_data.pin),     # 👈 NEW
+        pin_hashed=hash_pin(user_data.pin),
     )
+
     db.add(new_user)
     await db.flush()
 
+    # Create wallet
     from app.models.wallet import Wallet
     wallet = Wallet(user_id=new_user.id, balance=0)
     db.add(wallet)
@@ -44,6 +46,7 @@ async def signup(user_data: UserCreate, db: AsyncSession = Depends(get_db)):
     await db.refresh(new_user)
 
     return new_user
+
 
 
 # --------------------
