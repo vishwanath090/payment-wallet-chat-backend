@@ -29,7 +29,7 @@ It is fully deployed on Vercel, Render, and Neon, showcasing practical experienc
 ---
 ## Application Screenshots
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/2d77433e-720f-44b3-808b-b8a5e1271912" width="48%" />
+  <img width="1106" height="831" alt="Image" src="https://github.com/user-attachments/assets/6088afc1-94e9-4026-ada1-a431c01765af" />
   <img src="https://github.com/user-attachments/assets/5adb315d-8aed-4a15-96fc-143c0899aa31" width="48%" />
 </p>
 
