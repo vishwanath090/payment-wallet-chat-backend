@@ -39,7 +39,7 @@ It is fully deployed on Vercel, Render, and Neon, showcasing practical experienc
 </p>
 
 <p align="center">
-  <img src="https://github.com/user-attachments/assets/97d56d51-4b02-4586-bfbf-193f80b6b710" width="48%" />
+  <img src="https://github.com/user-attachments/assets/c1354298-d15f-42b3-a148-d7e617ce8198" width="48% />
   <img src="https://github.com/user-attachments/assets/0ddec229-731c-46ed-8d08-9f770ece81d3" width="48%" />
 </p>
 
@@ -47,7 +47,10 @@ It is fully deployed on Vercel, Render, and Neon, showcasing practical experienc
   <img src="https://github.com/user-attachments/assets/fe766650-56f8-4d7c-a710-bf55a255e51e" width="48%" />
   <img src="https://github.com/user-attachments/assets/6a5cd332-1c51-403f-b591-2b5bbc4f844f" width="48%" />
 </p>
-
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/59f43ebb-ed3d-4334-b8b3-ba745e725b9b" width="48%" />
+  <img src="https://github.com/user-attachments/assets/6c027973-1cd4-4688-b214-6adb02fe6eca" width="48%" />
+</p>
 # Core Features
 
 ## Authentication & Security
