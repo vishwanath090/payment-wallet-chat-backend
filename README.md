@@ -29,6 +29,23 @@ It is fully deployed on Vercel, Render, and Neon, showcasing practical experienc
 ---
 ## APPLICATION SCREENSHOTS 
 
+<h2 align="center">🔧 Backend Screenshots</h2>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/0101f886-07fb-46f6-a3fa-15b0cacac285" width="48%" />
+  <img src="https://github.com/user-attachments/assets/ede82f55-91e4-4857-be36-e97db0383537" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/176784e8-ae1c-4272-a455-7b52197b964f" width="48%" />
+  <img src="https://github.com/user-attachments/assets/0adb30f9-bc13-4452-b937-71bdb6c4ac47" width="48%" />
+</p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/1d7c8778-9a60-463f-a1f3-5bfb7eb671d4" width="48%" />
+</p>
+<h2 align="center">🎨 Frontend Screenshots</h2>
+
 <p align="center">
   <img src="https://github.com/user-attachments/assets/6088afc1-94e9-4026-ada1-a431c01765af" width="48%" />
   <img src="https://github.com/user-attachments/assets/5adb315d-8aed-4a15-96fc-143c0899aa31" width="48%" />
@@ -53,6 +70,7 @@ It is fully deployed on Vercel, Render, and Neon, showcasing practical experienc
   <img src="https://github.com/user-attachments/assets/59f43ebb-ed3d-4334-b8b3-ba745e725b9b" width="48%" />
   <img src="https://github.com/user-attachments/assets/6c027973-1cd4-4688-b214-6adb02fe6eca" width="48%" />
 </p>
+
 
 # Core Features
 
